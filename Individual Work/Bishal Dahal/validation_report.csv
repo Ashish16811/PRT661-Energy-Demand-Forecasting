@@ -1,0 +1,46 @@
+folder,file,bytes,rows,columns,timestamp_column,start,end,duplicate_timestamps,missing_cells,status
+bom_weather,bom_NSW1_max_temperature_station066062.csv,62909,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_NSW1_min_temperature_station066062.csv,63012,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_NSW1_rainfall_station066062.csv,65003,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_NT_max_temperature_station014015.csv,62425,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_NT_min_temperature_station014015.csv,62612,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_NT_rainfall_station014015.csv,60717,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_QLD1_max_temperature_station040913.csv,57755,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_QLD1_min_temperature_station040913.csv,57898,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_QLD1_rainfall_station040913.csv,58392,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_SA1_max_temperature_station023034.csv,59009,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_SA1_min_temperature_station023034.csv,59091,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_SA1_rainfall_station023034.csv,60561,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_TAS1_max_temperature_station094029.csv,63272,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_TAS1_min_temperature_station094029.csv,63571,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_TAS1_rainfall_station094029.csv,63392,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_VIC1_max_temperature_station086338.csv,57476,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_VIC1_min_temperature_station086338.csv,57551,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_VIC1_rainfall_station086338.csv,57432,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_WA_max_temperature_station009021.csv,62789,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_WA_min_temperature_station009021.csv,62866,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+bom_weather,bom_WA_rainfall_station009021.csv,60761,0,0,,,,,,HTML_NOT_DATA - provider served a web page
+dispatch,dispatch_NSW1.csv,49997,576,10,SETTLEMENTDATE,2026-09-11 12:05:00,2026-09-13 12:00:00,0,0,ok
+dispatch,dispatch_QLD1.csv,49195,576,10,SETTLEMENTDATE,2026-09-11 12:05:00,2026-09-13 12:00:00,0,0,ok
+dispatch,dispatch_SA1.csv,47729,576,10,SETTLEMENTDATE,2026-09-11 12:05:00,2026-09-13 12:00:00,0,0,ok
+dispatch,dispatch_TAS1.csv,48203,576,10,SETTLEMENTDATE,2026-09-11 12:05:00,2026-09-13 12:00:00,0,0,ok
+dispatch,dispatch_VIC1.csv,49583,576,10,SETTLEMENTDATE,2026-09-11 12:05:00,2026-09-13 12:00:00,0,0,ok
+energy_requirement,MarketRequirements-2026.csv,5026873,73440,9,,,,,145457,ok
+predispatch,predispatch_NSW1.csv,27812,320,10,SETTLEMENTDATE,2026-09-12 12:05:00,2026-09-14 04:00:00,0,0,ok
+predispatch,predispatch_QLD1.csv,27403,320,10,SETTLEMENTDATE,2026-09-12 12:05:00,2026-09-14 04:00:00,0,0,ok
+predispatch,predispatch_SA1.csv,26537,320,10,SETTLEMENTDATE,2026-09-12 12:05:00,2026-09-14 04:00:00,0,0,ok
+predispatch,predispatch_TAS1.csv,26955,320,10,SETTLEMENTDATE,2026-09-12 12:05:00,2026-09-14 04:00:00,0,0,ok
+predispatch,predispatch_VIC1.csv,27479,320,10,SETTLEMENTDATE,2026-09-12 12:05:00,2026-09-14 04:00:00,0,0,ok
+price_and_demand,WA_demand_2022_2026.csv,18991306,341072,6,SETTLEMENTDATE,2022-01-01 08:00:00,2026-09-13 07:55:00,0,0,ok
+price_and_demand,price_and_demand_NSW1.csv,22825150,494208,5,SETTLEMENTDATE,2022-01-01 00:05:00,2026-09-13 00:00:00,0,0,ok
+price_and_demand,price_and_demand_QLD1.csv,22820530,494208,5,SETTLEMENTDATE,2022-01-01 00:05:00,2026-09-13 00:00:00,0,0,ok
+price_and_demand,price_and_demand_SA1.csv,22258304,494208,5,SETTLEMENTDATE,2022-01-01 00:05:00,2026-09-13 00:00:00,0,0,ok
+price_and_demand,price_and_demand_TAS1.csv,22658846,494208,5,SETTLEMENTDATE,2022-01-01 00:05:00,2026-09-13 00:00:00,0,0,ok
+price_and_demand,price_and_demand_VIC1.csv,22773594,494208,5,SETTLEMENTDATE,2022-01-01 00:05:00,2026-09-13 00:00:00,0,0,ok
+public_holidays,public_holidays_NSW1_NSW.csv,26577,1717,3,date,2022-01-01 00:00:00,2026-09-13 00:00:00,0,1660,ok
+public_holidays,public_holidays_NT_NT.csv,26580,1717,3,date,2022-01-01 00:00:00,2026-09-13 00:00:00,0,1657,ok
+public_holidays,public_holidays_QLD1_QLD.csv,26676,1717,3,date,2022-01-01 00:00:00,2026-09-13 00:00:00,0,1656,ok
+public_holidays,public_holidays_SA1_SA.csv,26639,1717,3,date,2022-01-01 00:00:00,2026-09-13 00:00:00,0,1659,ok
+public_holidays,public_holidays_TAS1_TAS.csv,26406,1717,3,date,2022-01-01 00:00:00,2026-09-13 00:00:00,0,1672,ok
+public_holidays,public_holidays_VIC1_VIC.csv,26766,1717,3,date,2022-01-01 00:00:00,2026-09-13 00:00:00,0,1652,ok
+public_holidays,public_holidays_WA_WA.csv,26624,1717,3,date,2022-01-01 00:00:00,2026-09-13 00:00:00,0,1660,ok

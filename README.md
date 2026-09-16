@@ -1,34 +1,52 @@
 <div align="center">
 
-# ⚡ Electricity Demand Forecasting System
+# ⚡ ELECTRICITY DEMAND FORECASTING SYSTEM
 
-### 📊 Data Engineering • 🤖 Machine Learning • 🔮 Multi-Month Forecasting • 📈 Verification
+### 📊 Data Engineering • 🤖 Machine Learning • 🔮 Multi-Month Forecasting • ✅ Verification • 📡 Monitoring
 
 **An end-to-end electricity demand forecasting framework for Australian electricity regions**
 
 <br>
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Forecasting-orange)
-![Forecast Horizon](https://img.shields.io/badge/Forecast%20Horizon-Up%20to%204%20Months-brightgreen)
+![Forecast](https://img.shields.io/badge/Forecast-Up%20to%204%20Months-brightgreen)
 ![Regions](https://img.shields.io/badge/Regions-6-blueviolet)
+![Data](https://img.shields.io/badge/Data-2022--2026-orange)
 ![Status](https://img.shields.io/badge/Status-Development-success)
+
+<br>
+
+### ⚡ FORECAST HORIZON: **UP TO 4 MONTHS**
 
 </div>
 
 ---
 
-## 🌏 Project Overview
+# 🌏 PROJECT OVERVIEW
 
-The **Electricity Demand Forecasting System** is an end-to-end data science and machine learning project designed to forecast electricity demand across major Australian electricity regions.
+The **Electricity Demand Forecasting System** is an end-to-end forecasting framework developed to analyse and predict electricity demand across major Australian electricity regions.
 
-The system integrates historical electricity demand, weather information, calendar effects, public holidays, temporal patterns, and engineered demand features to produce reliable regional forecasts.
+The system integrates:
 
-A key capability of the system is its support for forecasting electricity demand **up to four months ahead**, allowing both shorter-term and extended demand planning scenarios to be analysed.
+⚡ Historical electricity demand  
+🌦️ Weather information  
+📅 Calendar and public holiday effects  
+🕐 Time-based features  
+🧠 Demand lag and rolling features  
+🤖 Machine learning models  
+🧪 Historical backtesting  
+🔮 Forecast generation  
+✅ Forecast verification  
+📊 Dashboard monitoring  
+🛡️ Governance and reproducibility  
 
-### 🗺️ Regions Covered
+The forecasting framework supports demand forecasts extending **up to four months ahead**, allowing both detailed short-term analysis and broader multi-month electricity demand planning.
 
-| Region | Code | Coverage |
+---
+
+# 🗺️ REGIONS COVERED
+
+| Region | Code | Market |
 |---|---|---|
 | 🟦 New South Wales | `NSW1` | NEM |
 | 🟩 Queensland | `QLD1` | NEM |
@@ -37,120 +55,88 @@ A key capability of the system is its support for forecasting electricity demand
 | 🟥 Tasmania | `TAS1` | NEM |
 | 🟧 Western Australia | `WA` | WEM |
 
-Historical information from **2022–2026** supports model development, backtesting, forecast generation, and independent verification.
+Historical information from **2022–2026** supports model development, backtesting, forecast generation and independent verification.
 
 ---
 
-# 🔮 Forecasting Capability
+# 🔮 FORECASTING CAPABILITY
 
 <div align="center">
 
-## ⚡ Forecast Horizon: Up to 4 Months
+## ⚡ UP TO FOUR-MONTH ELECTRICITY DEMAND FORECASTING
 
-| Forecast Level | Purpose |
+| Forecast Level | Application |
 |---|---|
-| ⏱️ 30-Minute | Detailed electricity demand behaviour |
-| 📅 Daily | Daily demand tracking and comparison |
-| 📆 Monthly | Long-term demand trend analysis |
-| 🔮 Up to 4 Months | Extended electricity demand forecasting |
+| ⏱️ **30-Minute** | Detailed electricity demand patterns |
+| 📅 **Daily** | Daily demand behaviour and peak analysis |
+| 📆 **Monthly** | Long-term trend analysis |
+| 🔮 **Up to 4 Months** | Extended demand forecasting |
 
 </div>
 
-The forecasting pipeline can generate projections extending **up to four months beyond the forecasting origin**, depending on the selected modelling configuration and available predictor information.
+The forecasting engine is designed to generate electricity demand projections extending **up to four months beyond the forecast origin**.
 
-This makes it possible to examine:
+This enables analysis of:
 
-- 📈 Future electricity demand patterns
-- ⚡ Expected peak-demand periods
-- 📅 Daily and monthly demand behaviour
-- 🌦️ Weather and seasonal influences
+- ⚡ Expected electricity demand
+- 📈 Peak-demand periods
+- 📅 Daily demand patterns
+- 📆 Monthly demand trends
+- 🌦️ Weather-related demand behaviour
 - 🗺️ Regional differences
-- 📊 Forecast uncertainty and error behaviour
-- 🔍 Actual-versus-forecast performance when observations become available
+- 📉 Forecast error behaviour
+- ✅ Actual-versus-forecast performance
 
-Forecast horizons are kept separate from historical training data to maintain chronological integrity and reduce the risk of information leakage.
+Forecast periods are separated chronologically from model training data to reduce the risk of **future-data leakage**.
 
 ---
 
-# 🎯 Project Objectives
+# 🎯 PROJECT OBJECTIVES
 
 The project aims to:
 
-- 📥 Acquire reliable electricity demand data from authoritative Australian sources.
-- 🗃️ Preserve original source datasets before transformation.
-- 🧹 Validate and clean electricity demand information.
-- ⏱️ Standardise regional datasets for modelling.
+- 📥 Acquire electricity demand data from authoritative Australian sources.
+- 🗃️ Preserve original raw datasets before transformation.
+- ✅ Validate data quality and identify missing observations.
+- 🧹 Clean and standardise regional datasets.
+- ⏱️ Align datasets to a common modelling framework.
 - 🌦️ Integrate weather information.
 - 📅 Include calendar and public holiday effects.
-- 🧠 Engineer lag, rolling, temporal, and demand features.
-- 🤖 Train and evaluate machine learning forecasting models.
+- 🧠 Engineer lag, rolling and temporal features.
+- 🤖 Develop machine learning forecasting models.
 - 🧪 Perform historical time-aware backtesting.
-- 🔮 Generate forecasts extending up to **four months ahead**.
-- ✅ Compare frozen forecasts with unseen actual demand.
-- 📊 Deliver dashboard-ready forecasting outputs.
-- 🔁 Maintain a reproducible modelling and verification workflow.
+- 🔮 Generate electricity forecasts up to **four months ahead**.
+- ✅ Compare frozen forecasts against unseen actual demand.
+- 📊 Produce dashboard-ready outputs.
+- 📡 Monitor forecast performance.
+- 🛡️ Maintain model lineage and reproducibility.
 
 ---
 
-# 🏗️ System Architecture
+# 🏗️ SYSTEM ARCHITECTURE
 
-The system follows a **four-stage architecture** covering the full lifecycle from raw data acquisition to operational monitoring and governance.
+The forecasting system follows a **four-stage architecture** covering the complete lifecycle from source data acquisition to operational monitoring and governance.
 
 <p align="center">
   <img src="docs/images/system_architecture.png"
        alt="Electricity Demand Forecasting System Architecture"
-       width="900">
+       width="950">
 </p>
 
 ---
 
-## 📥 Stage 1 — Data Acquisition
+# 📥 STAGE 1 — DATA ACQUISITION
 
-Electricity demand is collected from **AEMO and WEM**, together with weather and calendar information.
+The first stage collects electricity demand, weather and calendar information required by the forecasting system.
 
-Automated ingestion supports scheduled data retrieval while original datasets are retained as immutable raw snapshots.
-
-**Main components:**
-
-`Data Sources` → `Automated Ingestion` → `Raw Data Lake`
-
-This stage maintains source provenance and allows historical datasets, corrections, and forecast vintages to remain traceable.
-
----
-
-## 🧹 Stage 2 — Data Processing
-
-Raw datasets are transformed into reliable modelling inputs.
-
-The processing stage performs:
-
-- ✅ Quality validation
-- 🔍 Missing-value and gap detection
-- 📉 Outlier assessment
-- ⏱️ Time alignment
-- 🌦️ Weather integration
-- 📅 Calendar integration
-- 🧠 Feature engineering
-
-Regional information is ultimately organised into a curated store containing:
-
-> **Demand + Features + Forecasts + Actual Observations**
-
----
-
-## 🤖 Stage 3 — Model Operations
-
-The model operations layer manages model development, evaluation, forecasting, and verification.
+### Core Components
 
 ```text
-Model Registry
-      ↓
-Historical Backtesting
-      ↓
-Model Approval
-      ↓
-Forecast Engine
-      ↓
-Up-to-4-Month Forecast
-      ↓
-Actual vs Forecast Verification
+📡 Data Sources
+AEMO • WEM • Weather • Calendar
+             ↓
+⚙️ Automated Ingestion
+Scheduled Pulls • Correction Listener
+             ↓
+🗃️ Raw Data Lake
+Immutable Snapshots • Forecast Vintages

@@ -155,3 +155,5 @@ def assess_readiness(tests, region, training_rows, weather_pct, horizon_holidays
 
 if __name__ == "__main__":
     print("WP2 Bishal Dahal module loaded: validation, leakage checks and readiness.")
+
+# Work progress: 03 September 2026 - validation and regional readiness checks

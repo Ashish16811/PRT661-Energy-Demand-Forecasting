@@ -141,3 +141,5 @@ def main():
     a=p.parse_args(); fetch_weather_history(a.regions,a.weather_dir,a.start,a.end); fetch_weather_forecast(a.regions,a.weather_dir,a.forecast_origin); fetch_public_holidays(a.start,a.end,a.regions,a.holiday_dir)
 
 if __name__=="__main__": main()
+
+# Work progress: 19 August 2026 - weather and public holiday acquisition/validation

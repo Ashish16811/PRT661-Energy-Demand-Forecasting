@@ -1,0 +1,31 @@
+=== NSW1 ===
+1. PRIMARY - mean out-of-sample MAE over 3 selection origin(s): lowest = RandomForest_A (604.8 MW).
+2. Practical tie (within 1%): RandomForest_A
+SELECTED for NSW1: RandomForest_A (TREE_ENSEMBLE, PREVIOUS_WORK).
+
+=== QLD1 ===
+1. PRIMARY - mean out-of-sample MAE over 3 selection origin(s): lowest = RandomForest_A (438.2 MW).
+2. Practical tie (within 1%): RandomForest_A
+SELECTED for QLD1: RandomForest_A (TREE_ENSEMBLE, PREVIOUS_WORK).
+
+=== VIC1 ===
+0. Fully ready models preferred; warning-status models set aside: SARIMA
+1. PRIMARY - mean out-of-sample MAE over 3 selection origin(s): lowest = RandomForest_A (457.1 MW).
+2. Practical tie (within 1%): RandomForest_A
+SELECTED for VIC1: RandomForest_A (TREE_ENSEMBLE, PREVIOUS_WORK).
+
+=== SA1 ===
+0. Fully ready models preferred; warning-status models set aside: SARIMAX
+1. PRIMARY - mean out-of-sample MAE over 3 selection origin(s): lowest = RandomForest_B (186.4 MW).
+2. Practical tie (within 1%): RandomForest_B
+SELECTED for SA1: RandomForest_B (TREE_ENSEMBLE, PREVIOUS_WORK).
+
+=== TAS1 ===
+1. PRIMARY - mean out-of-sample MAE over 3 selection origin(s): lowest = RandomForest_A (70.9 MW).
+2. Practical tie (within 1%): RandomForest_A
+SELECTED for TAS1: RandomForest_A (TREE_ENSEMBLE, PREVIOUS_WORK).
+
+=== WA ===
+1. PRIMARY - mean out-of-sample MAE over 3 selection origin(s): lowest = RandomForest_B (204.5 MW).
+2. Practical tie (within 1%): RandomForest_B
+SELECTED for WA: RandomForest_B (TREE_ENSEMBLE, PREVIOUS_WORK).

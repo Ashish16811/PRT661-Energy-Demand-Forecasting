@@ -1,0 +1,33 @@
+region,model,driver_group,importance_share
+NSW1,RandomForest_A,Calendar / season,0.13703333333333334
+NSW1,RandomForest_A,Holidays,0.002466666666666667
+NSW1,RandomForest_A,Recent demand,0.5416
+NSW1,RandomForest_A,Trend,0.017266666666666666
+NSW1,RandomForest_A,Typical pattern (historical profiles),0.30160000000000003
+QLD1,RandomForest_A,Calendar / season,0.1476
+QLD1,RandomForest_A,Holidays,0.0027333333333333333
+QLD1,RandomForest_A,Recent demand,0.5325666666666666
+QLD1,RandomForest_A,Trend,0.0137
+QLD1,RandomForest_A,Typical pattern (historical profiles),0.3035
+SA1,RandomForest_B,Calendar / season,0.11593333333333333
+SA1,RandomForest_B,Holidays,0.0009333333333333333
+SA1,RandomForest_B,Recent demand,0.33893333333333336
+SA1,RandomForest_B,Trend,0.012866666666666665
+SA1,RandomForest_B,Typical pattern (historical profiles),0.36056666666666665
+SA1,RandomForest_B,Weather,0.17076666666666668
+TAS1,RandomForest_A,Calendar / season,0.10193333333333333
+TAS1,RandomForest_A,Holidays,0.0012000000000000001
+TAS1,RandomForest_A,Recent demand,0.49196666666666666
+TAS1,RandomForest_A,Trend,0.028033333333333334
+TAS1,RandomForest_A,Typical pattern (historical profiles),0.3767666666666667
+VIC1,RandomForest_A,Calendar / season,0.15313333333333334
+VIC1,RandomForest_A,Holidays,0.0039
+VIC1,RandomForest_A,Recent demand,0.4458333333333333
+VIC1,RandomForest_A,Trend,0.02743333333333333
+VIC1,RandomForest_A,Typical pattern (historical profiles),0.3698
+WA,RandomForest_B,Calendar / season,0.1278
+WA,RandomForest_B,Holidays,0.0010666666666666667
+WA,RandomForest_B,Recent demand,0.38480000000000003
+WA,RandomForest_B,Trend,0.008766666666666667
+WA,RandomForest_B,Typical pattern (historical profiles),0.31826666666666664
+WA,RandomForest_B,Weather,0.15926666666666667

@@ -1,0 +1,44 @@
+{
+  "selected_model": {
+    "NSW1": "RandomForest_A",
+    "QLD1": "RandomForest_A",
+    "VIC1": "RandomForest_A",
+    "SA1": "RandomForest_B",
+    "TAS1": "RandomForest_A",
+    "WA": "RandomForest_B"
+  },
+  "feature_set": {
+    "NSW1": "A",
+    "QLD1": "A",
+    "VIC1": "A",
+    "SA1": "B",
+    "TAS1": "A",
+    "WA": "B"
+  },
+  "runner_up": {
+    "NSW1": "RandomForest_B",
+    "QLD1": "RandomForest_B",
+    "VIC1": "RandomForest_B",
+    "SA1": "RandomForest_A",
+    "TAS1": "RandomForest_B",
+    "WA": "MLP"
+  },
+  "mlp_material_improvement": {
+    "NSW1": false,
+    "QLD1": false,
+    "VIC1": false,
+    "SA1": false,
+    "TAS1": false,
+    "WA": false
+  },
+  "gru_material_improvement": {
+    "NSW1": false,
+    "QLD1": false,
+    "VIC1": false,
+    "SA1": false,
+    "TAS1": false,
+    "WA": false
+  },
+  "sarimax_failed_runs": 14,
+  "core_model_count": 10
+}

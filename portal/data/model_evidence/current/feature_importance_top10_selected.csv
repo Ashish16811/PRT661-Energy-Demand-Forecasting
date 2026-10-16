@@ -1,0 +1,61 @@
+region,model,driver_group,feature,importance
+NSW1,RandomForest_A,Recent demand,lag_48,0.16296666666666668
+NSW1,RandomForest_A,Typical pattern (historical profiles),historical_month_dow_halfhour_mean,0.1553
+NSW1,RandomForest_A,Recent demand,same_half_hour_7day_mean,0.10453333333333333
+NSW1,RandomForest_A,Recent demand,same_half_hour_14day_mean,0.09643333333333333
+NSW1,RandomForest_A,Typical pattern (historical profiles),historical_month_halfhour_mean,0.0762
+NSW1,RandomForest_A,Recent demand,lag_336,0.073
+NSW1,RandomForest_A,Typical pattern (historical profiles),historical_month_halfhour_median,0.05963333333333334
+NSW1,RandomForest_A,Recent demand,lag_96,0.04833333333333333
+NSW1,RandomForest_A,Calendar / season,half_hour_index,0.0252
+NSW1,RandomForest_A,Calendar / season,hour,0.0236
+QLD1,RandomForest_A,Recent demand,lag_48,0.16113333333333332
+QLD1,RandomForest_A,Typical pattern (historical profiles),historical_month_dow_halfhour_mean,0.15133333333333335
+QLD1,RandomForest_A,Recent demand,same_half_hour_7day_mean,0.10966666666666668
+QLD1,RandomForest_A,Recent demand,same_half_hour_14day_mean,0.08886666666666666
+QLD1,RandomForest_A,Typical pattern (historical profiles),historical_month_halfhour_mean,0.0757
+QLD1,RandomForest_A,Recent demand,lag_336,0.07523333333333333
+QLD1,RandomForest_A,Typical pattern (historical profiles),historical_month_halfhour_median,0.0697
+QLD1,RandomForest_A,Recent demand,lag_96,0.05216666666666667
+QLD1,RandomForest_A,Calendar / season,hour,0.0322
+QLD1,RandomForest_A,Calendar / season,half_hour_index,0.031900000000000005
+SA1,RandomForest_B,Typical pattern (historical profiles),historical_month_dow_halfhour_mean,0.15
+SA1,RandomForest_B,Typical pattern (historical profiles),historical_month_halfhour_median,0.10256666666666665
+SA1,RandomForest_B,Typical pattern (historical profiles),historical_month_halfhour_mean,0.09549999999999999
+SA1,RandomForest_B,Recent demand,lag_48,0.08546666666666668
+SA1,RandomForest_B,Recent demand,same_half_hour_7day_mean,0.0766
+SA1,RandomForest_B,Recent demand,same_half_hour_14day_mean,0.06796666666666668
+SA1,RandomForest_B,Recent demand,lag_336,0.04750000000000001
+SA1,RandomForest_B,Recent demand,lag_96,0.028266666666666666
+SA1,RandomForest_B,Calendar / season,cos_half_hour,0.027433333333333334
+SA1,RandomForest_B,Weather,weather_temp_c,0.026099999999999998
+TAS1,RandomForest_A,Typical pattern (historical profiles),historical_month_dow_halfhour_mean,0.1579
+TAS1,RandomForest_A,Recent demand,same_half_hour_7day_mean,0.10603333333333333
+TAS1,RandomForest_A,Recent demand,same_half_hour_14day_mean,0.10203333333333332
+TAS1,RandomForest_A,Typical pattern (historical profiles),historical_month_halfhour_median,0.09963333333333334
+TAS1,RandomForest_A,Typical pattern (historical profiles),historical_month_halfhour_mean,0.0937
+TAS1,RandomForest_A,Recent demand,lag_48,0.0901
+TAS1,RandomForest_A,Recent demand,lag_96,0.05756666666666666
+TAS1,RandomForest_A,Recent demand,lag_336,0.0511
+TAS1,RandomForest_A,Calendar / season,cos_day_of_year,0.022933333333333333
+TAS1,RandomForest_A,Recent demand,previous_day_peak,0.021833333333333333
+VIC1,RandomForest_A,Typical pattern (historical profiles),historical_month_dow_halfhour_mean,0.17443333333333333
+VIC1,RandomForest_A,Recent demand,same_half_hour_7day_mean,0.1014
+VIC1,RandomForest_A,Recent demand,lag_48,0.09533333333333333
+VIC1,RandomForest_A,Typical pattern (historical profiles),historical_month_halfhour_median,0.0924
+VIC1,RandomForest_A,Typical pattern (historical profiles),historical_month_halfhour_mean,0.08653333333333334
+VIC1,RandomForest_A,Recent demand,same_half_hour_14day_mean,0.07986666666666666
+VIC1,RandomForest_A,Recent demand,lag_336,0.07093333333333333
+VIC1,RandomForest_A,Recent demand,lag_96,0.038066666666666665
+VIC1,RandomForest_A,Calendar / season,half_hour_index,0.020033333333333334
+VIC1,RandomForest_A,Calendar / season,hour,0.018566666666666665
+WA,RandomForest_B,Typical pattern (historical profiles),historical_month_dow_halfhour_mean,0.13646666666666665
+WA,RandomForest_B,Recent demand,lag_48,0.12503333333333333
+WA,RandomForest_B,Typical pattern (historical profiles),historical_month_halfhour_median,0.0871
+WA,RandomForest_B,Typical pattern (historical profiles),historical_month_halfhour_mean,0.08636666666666666
+WA,RandomForest_B,Recent demand,same_half_hour_7day_mean,0.07473333333333333
+WA,RandomForest_B,Recent demand,same_half_hour_14day_mean,0.07253333333333334
+WA,RandomForest_B,Recent demand,lag_96,0.0388
+WA,RandomForest_B,Recent demand,lag_336,0.0362
+WA,RandomForest_B,Calendar / season,sin_half_hour,0.029866666666666666
+WA,RandomForest_B,Weather,weather_daily_temp_mean_c,0.028599999999999997

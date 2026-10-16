@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+.env
+*.log
+*.sqlite
+*.sqlite3
+*.db
+.DS_Store
+Thumbs.db
+
+# Heavy runtime assets are uploaded once to the Railway worker volume.
+models/
+data/*
+!data/model_evidence/
+!data/model_evidence/**
+PRT661_WORKER_ASSETS*.tar
+PRT661_WORKER_ASSETS*.tar.gz
+
+# Local generated deployment bundles
+*.zip

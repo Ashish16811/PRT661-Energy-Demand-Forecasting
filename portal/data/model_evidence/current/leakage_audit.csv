@@ -1,0 +1,15 @@
+check,result,evidence
+No AEMO forecast / raw weather / same-day HDD-CDD column in any feature list,PASS,54 features scanned
+Feature Set A / B definitions unchanged,PASS,"A=39 columns, B=54 columns (previous: 39 / 54)"
+Stage 2 demand features == recursive origin-safe rebuild on actual history,PASS,NSW1: max diff 5.28e-10 MW; QLD1: max diff 2.44e-10 MW; VIC1: max diff 2.07e-10 MW; SA1: max diff 4.61e-11 MW; TAS1: max diff 7.65e-11 MW; WA: max diff 1.16e-10 MW
+Profiles / climatology / balance point built from rows strictly before each origin,PASS,24 region-origins checked
+Horizon rows carry no target or actual-demand-derived column,PASS,0 violating region-origin(s)
+Horizon weather replaced by origin-safe climatology (no realised weather),PASS,sources: ['BACKTEST_CLIMATOLOGY']
+Balance point re-derived per origin (Phase 1 leakage fix),PASS,NSW1 2022: 19.5 C (PRE_ORIGIN_SHORT_HISTORY_ESTIMATE); NSW1 2023: 18.5 C (PRE_ORIGIN_FULL_SEARCH); NSW1 2024: 18.5 C (PRE_ORIGIN_FULL_SEARCH); NSW1 2025: 19.0 C (PRE_ORIGIN_FULL_SEARCH); QLD1 2022: 16.5 C (PRE_ORIGIN_SHORT_HISTORY_ESTIMATE); QLD1 2023: 17.5 C (PRE_ORIGIN_FULL_SEARCH); QLD1 2024: 17.5 C (PRE_ORIGIN_FULL_SEARCH); QLD1 2025: 18.0 C (PRE_ORIGIN_FULL_SEARCH); VIC1 2022: 18.0 C (PRE_ORIGIN_SHORT_HISTORY_ESTIMATE); VIC1 2023: 17.5 C (PRE_ORIGIN_FULL_SEARCH); VIC1 2024: 17.5 C (PRE_ORIGIN_FULL_SEARCH); VIC1 2025: 17.5 C (PRE_ORIGIN_FULL_SEARCH); SA1 2022: 19.0 C (PRE_ORIGIN_SHORT_HISTORY_ESTIMATE); SA1 2023: 18.5 C (PRE_ORIGIN_FULL_SEARCH); SA1 2024: 18.5 C (PRE_ORIGIN_FULL_SEARCH); SA1 2025: 18.5 C (PRE_ORIGIN_FULL_SEARCH); TAS1 2022: 17.0 C (PRE_ORIGIN_SHORT_HISTORY_ESTIMATE); TAS1 2023: 17.5 C (PRE_ORIGIN_FULL_SEARCH); TAS1 2024: 17.5 C (PRE_ORIGIN_FULL_SEARCH); TAS1 2025: 18.0 C (PRE_ORIGIN_FULL_SEARCH); WA 2022: 18.5 C (PRE_ORIGIN_SHORT_HISTORY_ESTIMATE); WA 2023: 18.5 C (PRE_ORIGIN_FULL_SEARCH); WA 2024: 18.5 C (PRE_ORIGIN_FULL_SEARCH); WA 2025: 19.0 C (PRE_ORIGIN_FULL_SEARCH)
+Neural scalers fitted on training rows only,DESIGN_CONTROL,ColumnScaler/TargetScaler fitted on rows before the validation block (early-stopping fit) or before the origin (refit); never on horizon rows
+Neural early stopping uses only the 8 weeks before the origin,DESIGN_CONTROL,NEURAL_VALIDATION_DAYS=56; the Sep-Dec horizon is never passed to fit()
+GRU sequences end before the block they forecast; training targets end before the origin,DESIGN_CONTROL + RUNTIME_ASSERT,"gru_training_starts() asserts s + 48 <= origin for every sample; recursive windows use predictions, never horizon actuals"
+XGBoost / RandomForest hyper-parameters fixed (no tuning on backtest windows),DESIGN_CONTROL,RF_PARAMETERS / XGB_PARAMETERS unchanged from the previous Stage 3; no early stopping on any horizon
+Peak thresholds from pre-origin training demand only,PASS,ALL_PRE_ORIGIN_HISTORY (same months unavailable); SAME_CALENDAR_MONTHS_PRE_ORIGIN
+Limited-history (2022) origins labelled and excluded from selection,PASS,6 limited-history origin row(s)
+Screening gate on the backtest window removed,DESIGN_CONTROL,every registry model is evaluated on every valid origin

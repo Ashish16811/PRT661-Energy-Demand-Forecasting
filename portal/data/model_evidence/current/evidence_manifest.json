@@ -1,0 +1,203 @@
+{
+  "evidence_version": "wp4-2026-09-29",
+  "pack_revision": 2,
+  "source_run": "EnergyForecast_Run_20260929_145931",
+  "pipeline_version": "4.0.0",
+  "selected_model_generated": "2026-09-29T22:06:14",
+  "selection_rule": "lowest mean four-month MAE over FULL_HISTORY origins 2023-09-01, 2024-09-01, 2025-09-01; 1% practical tie; sequential tie-breaks",
+  "selection_origins": [
+    "2023-09-01",
+    "2024-09-01",
+    "2025-09-01"
+  ],
+  "limited_history_origin": "2022-09-01 (reported, not used for selection)",
+  "core_models": [
+    "Naive48",
+    "Naive336",
+    "RandomForest_A",
+    "RandomForest_B",
+    "XGBoost_A",
+    "XGBoost_B",
+    "SARIMA",
+    "SARIMAX",
+    "MLP",
+    "GRU"
+  ],
+  "non_selection_experiments": {
+    "GRU_L672": "SENSITIVITY_ONLY",
+    "XGBoost_A+CoreWeather": "WEATHER_ABLATION_ONLY"
+  },
+  "selected_models": {
+    "NSW1": "RandomForest_A",
+    "QLD1": "RandomForest_A",
+    "VIC1": "RandomForest_A",
+    "SA1": "RandomForest_B",
+    "TAS1": "RandomForest_A",
+    "WA": "RandomForest_B"
+  },
+  "weather_policy_note": "historical backtests used origin-safe climatology on the horizon, never realised future weather",
+  "files": {
+    "backtest_origins.csv": {
+      "sha256": "51f8a7bc88b9f8bb42112d3e505166e11a7788a41d7e891bc3cbe97b1945c993",
+      "bytes": 5886,
+      "rows": 24,
+      "provenance": "copied unchanged from validation/backtest_origins.csv"
+    },
+    "common_model_comparison.csv": {
+      "sha256": "ffcc9db6fc47c0a1613f280a92ed0aba7027d9a6b9c67c55d63ecc0387646562",
+      "bytes": 6973,
+      "rows": 55,
+      "provenance": "copied unchanged from metrics/common_model_comparison.csv"
+    },
+    "common_model_summary.csv": {
+      "sha256": "e05919750b4bb4b5935f987ce1e9661872849be3170de8129e579f3b6d962a98",
+      "bytes": 1205,
+      "rows": 10,
+      "provenance": "copied unchanged from metrics/common_model_summary.csv"
+    },
+    "feature_importance.csv": {
+      "sha256": "704e567c0ce3bc6658035fedda14ee305052e58ac8e7b65bfdeed26827921434",
+      "bytes": 302954,
+      "rows": 5544,
+      "provenance": "copied unchanged from explainability/"
+    },
+    "feature_importance_grouped.csv": {
+      "sha256": "0ccfdebf8377b446960dd60072aefd61c8b2a61f5fd6af689a4f9799a4fc5364",
+      "bytes": 1750,
+      "rows": 32,
+      "provenance": "selected model per region; importance averaged per feature over 2023-2025 origins, then summed into driver groups (mapping in build_evidence.py)"
+    },
+    "feature_importance_top10_selected.csv": {
+      "sha256": "289e9528193a62cbf3739ba146555fd664e69deac83f89cbebaff5ee44c7dff4",
+      "bytes": 4670,
+      "rows": 60,
+      "provenance": "top 10 features of the selected model per region (mean over 2023-2025 origins)"
+    },
+    "forecast_error_bands.csv": {
+      "sha256": "6b3cb1d627d71ae68aee17e257f6a42d8cc48668757e8cc09b98e1f2a509edff",
+      "bytes": 57466,
+      "rows": 450,
+      "provenance": "empirical residual quantiles (forecast - actual) of the SELECTED model per region, 2023-2025 selection origins only, by lead band and by local hour; a historical error range, NOT a probabilistic forecast"
+    },
+    "forecast_error_bands_daily.csv": {
+      "sha256": "a758d9f9ba26d0d03e1035da4d2cd73185ca5ab09ef0e9579c8cfd84b671dd6d",
+      "bytes": 2009,
+      "rows": 18,
+      "provenance": "empirical quantiles of daily-mean residual (forecast mean - actual mean) of the SELECTED model, complete days only, 2023-2025 selection origins, by lead band; used for daily-mean chart views"
+    },
+    "leakage_audit.csv": {
+      "sha256": "ec80c36c87dfced38968b9d97e22b2eb721b30e598c37eaf564e3bb4f89e2622",
+      "bytes": 3122,
+      "rows": 14,
+      "provenance": "copied unchanged from validation/leakage_audit.csv"
+    },
+    "model_comparison_by_horizon.csv": {
+      "sha256": "772b14d81527203fb6c64a099b995e84b7eae3b14608cb001f0883827e481743",
+      "bytes": 46110,
+      "rows": 288,
+      "provenance": "rows with origin_scope == SELECTION_MEAN (mean of 2023-2025 origins)"
+    },
+    "model_comparison_by_region.csv": {
+      "sha256": "4ebca0672bf00c8dea411c6b5d5c50e224723e8b9e6fa704c9b9e90d90cac208",
+      "bytes": 23435,
+      "rows": 72,
+      "provenance": "copied unchanged from metrics/model_comparison_by_region.csv"
+    },
+    "model_comparison_by_year.csv": {
+      "sha256": "cd7175e1a4a3c9b6e03882f6d2dff3f5f28988060ab37a1f862970d144efa3e9",
+      "bytes": 54374,
+      "rows": 288,
+      "provenance": "column subset of metrics/model_comparison_by_year.csv"
+    },
+    "model_comparison_overall.csv": {
+      "sha256": "fd9281ba6fe5172b4d1250062ced441217c2e0660fe590adcc7ab5e2255d1ed2",
+      "bytes": 2065,
+      "rows": 10,
+      "provenance": "copied unchanged from metrics/model_comparison_overall.csv"
+    },
+    "model_failures.csv": {
+      "sha256": "14ed9fc419280ccf1f47d7446f7f3a0b6cfec542e7300178a69e9e1e38afcdba",
+      "bytes": 2818,
+      "rows": 14,
+      "provenance": "copied unchanged from validation/model_failures.csv"
+    },
+    "model_registry.csv": {
+      "sha256": "70547fc868daf10a87b650ee7833c88acd164633833f11608778d9e7b3e807ca",
+      "bytes": 1093,
+      "rows": 12,
+      "provenance": "copied unchanged from validation/model_registry.csv"
+    },
+    "model_stability.csv": {
+      "sha256": "1365a5366afa75113588589c9b0f8692b40ee83e3cd02be89488ec08472a9dd2",
+      "bytes": 18838,
+      "rows": 72,
+      "provenance": "copied unchanged from metrics/model_stability.csv"
+    },
+    "neural_vs_previous_comparison.csv": {
+      "sha256": "2b66f59aa957e4face339084fc21fd1fcdf26111e8da338f41c078b477d6302d",
+      "bytes": 2317,
+      "rows": 6,
+      "provenance": "copied unchanged from metrics/neural_vs_previous_comparison.csv"
+    },
+    "peak_demand_metrics.csv": {
+      "sha256": "4b833f375e9a19b46e032238f417613349fcddafa175fe10952646ec8beca6a6",
+      "bytes": 66512,
+      "rows": 288,
+      "provenance": "copied unchanged"
+    },
+    "peak_normal_vs_high_summary.csv": {
+      "sha256": "e3526121769fa60063bacafc85e3cdce3df7292fcd22125a5a0d5aae68d8f34f",
+      "bytes": 3149,
+      "rows": 36,
+      "provenance": "MAE and bias of normal vs peak-flagged intervals (peak_flag from training-only thresholds), selection origins only"
+    },
+    "peak_thresholds.csv": {
+      "sha256": "69a538e3611d5b3670995bf8f0a1cc987fc91eba65c79daddaa17a9436defead",
+      "bytes": 1929,
+      "rows": 24,
+      "provenance": "copied unchanged from validation/peak_thresholds.csv"
+    },
+    "production_month_to_date_verification.csv": {
+      "sha256": "5326fa4ff20441c13479bc15f128c18c7266543a684f1bd4ed084b6cc519b308",
+      "bytes": 983,
+      "rows": 6,
+      "provenance": "copied unchanged from metrics/production_month_to_date_verification.csv"
+    },
+    "regional_model_winners.csv": {
+      "sha256": "14641426749dffc896dc5fd677819536dadd9e23b3caefcd06e1ebe21504d95a",
+      "bytes": 3222,
+      "rows": 6,
+      "provenance": "copied unchanged from metrics/regional_model_winners.csv"
+    },
+    "run_status.json": {
+      "sha256": "2198d61e793bc1725100ce8860b0e0a0096ac413f43dd74e6fca85d8775493cb",
+      "bytes": 724,
+      "rows": null,
+      "provenance": "copied unchanged from summary/run_status.json"
+    },
+    "selected_model.json": {
+      "sha256": "b0e59c49dfac72c3d8ae8b4ccbe048bc3378b3df1bcee626b94c7d3d11285b5a",
+      "bytes": 19862,
+      "rows": null,
+      "provenance": "copied unchanged from models/selected_model.json"
+    },
+    "selection_trace.txt": {
+      "sha256": "7b3deee07780257abad3cf50bd5e623b03145a30bc455375479542359fdbff1c",
+      "bytes": 1518,
+      "rows": null,
+      "provenance": "copied unchanged from summary/selection_trace.txt"
+    },
+    "statistical_comparison.csv": {
+      "sha256": "aee0246a5c9cfd89e08c8bcb0c3137e754bf55157b38b207a5fbfe650c5585d3",
+      "bytes": 3166,
+      "rows": 54,
+      "provenance": "copied unchanged from metrics/statistical_comparison.csv"
+    },
+    "weather_ablation_metrics.csv": {
+      "sha256": "cad228f6146fd3e3aa15a54047a68d355eeef5f6f4db13393fd7112b7575816d",
+      "bytes": 19961,
+      "rows": 72,
+      "provenance": "rows with origin_scope == SELECTION_MEAN"
+    }
+  }
+}

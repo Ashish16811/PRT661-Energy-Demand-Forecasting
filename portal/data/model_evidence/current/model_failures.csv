@@ -1,0 +1,15 @@
+region,model,backtest_origin,stage,error_message,exception_type,traceback_tail,recorded_at,status
+NSW1,SARIMAX,2022-09-01,backtest,"forecast diverged outside the plausible range [1520, 15899] MW: produced [10430, 18130] MW over 5856 steps; no metric is reported for it",,,2026-09-29T15:03:47,MODEL_FAILED
+NSW1,SARIMAX,2023-09-01,backtest,"forecast diverged outside the plausible range [998, 14794] MW: produced [-11493808940695022, -11493808939872672] MW over 5856 steps; no metric is reported for it",,,2026-09-29T15:11:20,MODEL_FAILED
+QLD1,SARIMAX,2022-09-01,backtest,MissingDataError: exog contains inf or nans,,,2026-09-29T16:14:01,MODEL_FAILED
+QLD1,SARIMAX,2023-09-01,backtest,"forecast diverged outside the plausible range [465, 10677] MW: produced [-16848, 5992] MW over 5856 steps; no metric is reported for it",,,2026-09-29T16:20:15,MODEL_FAILED
+QLD1,SARIMAX,2025-09-01,backtest,"forecast diverged outside the plausible range [-845, 11879] MW: produced [3421, 60063] MW over 5856 steps; no metric is reported for it",,,2026-09-29T16:52:42,MODEL_FAILED
+VIC1,SARIMAX,2022-09-01,backtest,"forecast diverged outside the plausible range [109, 10186] MW: produced [9023, 11840] MW over 5856 steps; no metric is reported for it",,,2026-09-29T17:20:43,MODEL_FAILED
+VIC1,SARIMAX,2024-09-01,backtest,"forecast diverged outside the plausible range [-700, 10510] MW: produced [2284, 12509] MW over 5856 steps; no metric is reported for it",,,2026-09-29T17:39:57,MODEL_FAILED
+VIC1,SARIMAX,2025-09-01,backtest,"forecast diverged outside the plausible range [-881, 11451] MW: produced [4306, 13717] MW over 5856 steps; no metric is reported for it",,,2026-09-29T18:01:11,MODEL_FAILED
+SA1,SARIMAX,2022-09-01,backtest,"forecast diverged outside the plausible range [-726, 3570] MW: produced [1265, 9608] MW over 5856 steps; no metric is reported for it",,,2026-09-29T18:22:49,MODEL_FAILED
+TAS1,SARIMAX,2022-09-01,backtest,"forecast diverged outside the plausible range [472, 2133] MW: produced [803, 2538] MW over 5856 steps; no metric is reported for it",,,2026-09-29T19:32:51,MODEL_FAILED
+TAS1,SARIMAX,2024-09-01,backtest,"forecast diverged outside the plausible range [587, 1982] MW: produced [1446, 199604] MW over 5856 steps; no metric is reported for it",,,2026-09-29T19:53:30,MODEL_FAILED
+TAS1,SARIMAX,2025-09-01,backtest,"forecast diverged outside the plausible range [498, 1822] MW: produced [461, 1212] MW over 5856 steps; no metric is reported for it",,,2026-09-29T20:09:30,MODEL_FAILED
+WA,SARIMAX,2022-09-01,backtest,MissingDataError: exog contains inf or nans,,,2026-09-29T20:41:43,MODEL_FAILED
+WA,SARIMAX,2023-09-01,backtest,"forecast diverged outside the plausible range [-634, 4862] MW: produced [-2488, 1804] MW over 5856 steps; no metric is reported for it",,,2026-09-29T20:50:44,MODEL_FAILED

@@ -1,0 +1,13 @@
+pandas>=2.2
+numpy>=2.0
+requests>=2.32
+holidays>=0.70
+scikit-learn==1.9.1
+xgboost>=3.0
+joblib>=1.4
+SQLAlchemy>=2.0
+psycopg[binary]>=3.2
+plotly>=6.0
+dash>=3.0
+gunicorn>=23.0
+matplotlib

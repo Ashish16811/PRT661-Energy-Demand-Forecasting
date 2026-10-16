@@ -1,0 +1,66 @@
+"""Exact production feature contracts (identical to Energy_Demand_Forecasting_Pipeline.py
+v4.0.0 FEATURE_SET_A / FEATURE_SET_B and to the Stage 2 feature_set_*.csv files).
+
+Feature Set A (core, 39) contains NO weather. Feature Set B (54) = A + 15 weather/context.
+"""
+FEATURE_SET_A = [
+    "lag_48",
+    "lag_96",
+    "lag_336",
+    "half_hour_index",
+    "hour",
+    "day_of_week",
+    "day_of_month",
+    "week_of_year",
+    "month",
+    "quarter",
+    "day_of_year",
+    "is_weekend",
+    "sin_half_hour",
+    "cos_half_hour",
+    "sin_day_of_week",
+    "cos_day_of_week",
+    "sin_month",
+    "cos_month",
+    "sin_day_of_year",
+    "cos_day_of_year",
+    "is_public_holiday",
+    "is_day_before_holiday",
+    "is_day_after_holiday",
+    "historical_month_halfhour_mean",
+    "historical_month_halfhour_median",
+    "historical_month_dow_halfhour_mean",
+    "historical_month_daily_mean",
+    "historical_month_peak_mean",
+    "historical_month_variability",
+    "previous_day_mean",
+    "previous_day_peak",
+    "previous_day_min",
+    "same_half_hour_7day_mean",
+    "same_half_hour_14day_mean",
+    "rolling_mean_24h_at_t_minus_48",
+    "rolling_std_24h_at_t_minus_48",
+    "time_index",
+    "days_since_start",
+    "year",
+]
+
+WEATHER_FEATURES = [
+    "weather_temp_c",
+    "weather_humidity_pct",
+    "weather_daily_temp_max_c",
+    "weather_daily_temp_min_c",
+    "weather_daily_temp_mean_c",
+    "weather_daily_rainfall_mm",
+    "temp_mean_lag_1d",
+    "temp_mean_lag_7d",
+    "rolling_temp_mean_7d",
+    "expected_temp_climatology",
+    "historical_rain_probability",
+    "hdd_lag_1d",
+    "cdd_lag_1d",
+    "expected_hdd_climatology",
+    "expected_cdd_climatology",
+]
+
+FEATURE_SET_B = FEATURE_SET_A + WEATHER_FEATURES

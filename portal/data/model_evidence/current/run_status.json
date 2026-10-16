@@ -1,0 +1,24 @@
+{
+  "models_completed": 10,
+  "models_in_registry": 10,
+  "regions_completed": 6,
+  "regions_total": 6,
+  "backtests_completed": 24,
+  "model_runs_ok": 274,
+  "model_runs_failed_or_not_run": 14,
+  "selection_evidence": "Generated",
+  "regional_winners": {
+    "NSW1": "RandomForest_A",
+    "QLD1": "RandomForest_A",
+    "VIC1": "RandomForest_A",
+    "SA1": "RandomForest_B",
+    "TAS1": "RandomForest_A",
+    "WA": "RandomForest_B"
+  },
+  "quick_validation_run": false,
+  "status": "COMPLETE",
+  "run_folder": "C:\\Users\\iamas\\Downloads\\Semester 2, 2026\\Data Science\\Completed\\Data Output\\EnergyForecast_Run_20260929_145931",
+  "elapsed_minutes": 426.74,
+  "csv_outputs": 38,
+  "figures": 107
+}
